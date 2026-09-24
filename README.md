@@ -1,3 +1,16 @@
 # Cryptocurrency-Volatility-Prediction
 Cryptocurrency Volatility Prediction
-1. Project Overview & Problem StatementObjective: Predict short-term future market risk (7-day rolling volatility shifted by 1 period, $t+1$) across multi-asset cryptocurrency time series.Why Volatility (Not Price)? Asset prices follow a random walk (non-stationary, $I(1)$), making direct price prediction prone to spurious correlations. Volatility clusters (Mandelbrot’s stylized fact: large changes follow large changes, small changes follow small changes) and exhibits mean reversion, making it far more predictable and critical for:Risk Management: Dynamic Value-at-Risk (VaR) calculation.Derivatives & Options: Pricing volatility surfaces and implied vs. realized spread.Automated Execution: Adjusting order sizing during liquidity shocks.Dataset: 72,946 daily rows across 56 cryptocurrencies (Bitcoin, Litecoin, XRP, etc.) from 2013 to 2022 containing OHLCV (open, high, low, close, volume) and marketCap.
+Cryptocurrency markets are highly volatile, and understanding and forecasting this volatility is crucial for
+market participants. Volatility refers to the degree of variation in the price of a cryptocurrency over time, and
+high volatility can lead to significant risks for traders and investors. Accurate volatility prediction helps in risk
+management, portfolio allocation, and developing trading strategies.
+
+
+In this project, you are required to build a machine learning model to predict cryptocurrency volatility levels
+based on historical market data such as OHLC (Open, High, Low, Close) prices, trading volume, and market
+capitalization. The objective is to anticipate periods of heightened volatility, enabling traders and financial
+institutions to manage risks and make informed decisions.
+
+
+Your final model should provide insights into market stability by forecasting volatility variations, allowing
+stakeholders to proactively respond to changing market conditions.
